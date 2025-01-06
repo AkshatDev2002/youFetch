@@ -1,128 +1,123 @@
-<<<<<<< HEAD
-![youFetch Logo](./src/assets/spinner.png)
-=======
->>>>>>> d0868afd13dffab6d3df456dfbaafb12dd029329
+# YouFetch
 
-# youFetch - A React App for Downloading YouTube Videos
-
-youFetch is a user-friendly React application that allows users to download YouTube videos easily. Simply paste the YouTube video link, and youFetch does the rest. Designed with simplicity and performance in mind, this app is perfect for anyone who wants to save their favorite YouTube videos offline.
+YouFetch is a free and simple tool to convert and download YouTube videos into MP3 format. The app works seamlessly on desktop, mobile, and all devices, requiring no additional software installation. Best of all, it’s completely free and safe to use! 🎵
 
 ---
 
-<<<<<<< HEAD
-=======
-
-## 🖼 Preview
-![Project Preview](https://i.postimg.cc/8C89q8Ty/385aefca-8477-4dac-b700-9818e39c1df7.png)
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React.js, React Router
-- **Styling:** CSS
-- **Animations:** CSS keyframes and animations.
-
----
-
-
->>>>>>> d0868afd13dffab6d3df456dfbaafb12dd029329
 ## Features
-- **Easy-to-Use Interface:** A clean and intuitive UI for seamless interaction.
-- **Multiple Formats & Resolutions:** Supports video downloads in various formats and resolutions (based on availability).
-- **Fast Processing:** Efficient and quick video processing for hassle-free downloads.
-- **Secure Downloads:** Ensures user privacy and secure data handling.
+- Convert YouTube videos into high-quality MP3 audio files.
+- Works on all devices: desktop, tablet, and mobile.
+- No software installation required.
+- Completely free and secure to use.
+- Processes videos up to 60 minutes in length.
 
 ---
 
-<<<<<<< HEAD
-## Getting Started
-=======
-## 🖥️ Setup Instructions
->>>>>>> d0868afd13dffab6d3df456dfbaafb12dd029329
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to Use
 
-### Prerequisites
-- Node.js and npm installed on your machine.
-- A YouTube video link for testing.
+1. **Copy the Video URL**: Head over to YouTube, find the video you want to convert, and copy its URL (e.g., `https://youtube.com/watch?v=video-id`).
 
-### Installation
+2. **Paste the URL**: Open YouFetch and paste the video URL into the input field.
+
+3. **Convert and Download**: Click the "Convert" button and let YouFetch process your request. In moments, your MP3 file will be ready for download.
+
+---
+
+## Installation
+This project is already hosted on GitHub Pages. However, if you wish to run it locally:
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/youfetch.git
+   git clone https://github.com/<your-username>/<your-repo-name>.git
    ```
-2. Navigate to the project directory:
+
+2. Navigate to the project folder:
    ```bash
-   cd youfetch
+   cd <your-repo-name>
    ```
+
 3. Install dependencies:
    ```bash
    npm install
    ```
 
----
+4. Run the app locally:
+   ```bash
+   npm start
+   ```
 
-## Available Scripts
-
-### `npm start`
-Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page reloads when you make changes, and lint errors are displayed in the console.
-
-### `npm test`
-Launches the test runner in interactive watch mode. See more about [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
-
-### `npm run build`
-Builds the app for production in the `build` folder. The app is optimized for the best performance and ready for deployment. See [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more details.
-
-### `npm run eject`
-This command copies configuration files and transitive dependencies into the project folder for full customization. Use with caution as it is a one-way operation.
-
-<<<<<<< HEAD
----
-
-## Learn More
-- [React Documentation](https://reactjs.org/)
-- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
-
-## Contributions
-Contributions, issues, and feature requests are welcome! Feel free to open a pull request or issue to improve youFetch.
+5. Open the app in your browser at `http://localhost:3000`.
 
 ---
 
-### License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Deployment
+This project is deployed on GitHub Pages. To update the deployment:
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
 
 ---
 
-### Acknowledgements
-- Logo design inspiration from 3D elements.
-- Built using [React](https://reactjs.org/) and [Create React App](https://github.com/facebook/create-react-app).
-=======
-
-
----
-
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
+## Technologies Used
+- **React**: For building the user interface.
+- **Axios**: For making API requests.
+- **RapidAPI**: For integrating the YouTube-to-MP3 conversion API.
+- **CSS**: For styling the application.
 
 ---
 
-## 🤝 Contributing
+## API Integration
+YouFetch uses the `youtube-mp36` API from RapidAPI to process video-to-MP3 conversion. The API requires an API key, which is securely stored in the application.
 
-Contributions are welcome! Please follow these steps:
+---
+
+## Screenshots
+### Desktop View
+![Desktop View](./screenshots/desktop-view.png)
+
+### Mobile View
+![Mobile View](./screenshots/mobile-view.png)
+
+---
+
+## License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute as needed.
+
+---
+
+## Contributing
+Contributions are welcome! To contribute:
+
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a Pull Request.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Added new feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
 
 ---
 
-## 📧 Contact
+## Contact
+Feel free to reach out for support or feedback:
+- **Email**: your-email@example.com
+- **GitHub**: [Your GitHub Profile](https://github.com/<your-username>)
 
-**Author:** Akshat Dev  
-**Email:** dakshat75@gmail.com  
-**GitHub:** [AkshatDev](https://github.com/AkshatDev2002)
+---
 
->>>>>>> d0868afd13dffab6d3df456dfbaafb12dd029329
+**Star the project on GitHub if you found it helpful!** 🌟
+
