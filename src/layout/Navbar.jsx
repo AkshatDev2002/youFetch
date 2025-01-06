@@ -12,9 +12,9 @@ function Navbar({ isOpen, toggleNav }) {
     <nav className="vertical-navbar">
       <ul>
         <li onClick={() => { toggleNav(); navigate('/download'); }}>
-          Download Videos 📥
+          Convert Videos 📥
         </li>
-        {/* Update to navigate to Contact page 📞 */}
+       
         <li onClick={() => { toggleNav(); navigate('/contact'); }}>
           Contact Me! ✉️
         </li>

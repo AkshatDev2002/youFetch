@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Axios for making API requests
 import Spinner from './Spinner'; // Spinner component for loading animation
 import { useNavigate } from 'react-router-dom'; // For navigation 🚀
-import '../styles/Downloader.css'; // Importing styles for the Downloader component
+import '../styles/Converter.css'; // Importing styles for the Downloader component
 
 const Downloader = () => {
   const navigate = useNavigate(); // Hook for programmatic navigation 🔄
@@ -13,6 +12,13 @@ const Downloader = () => {
   const [downloadLink, setDownloadLink] = useState(null); // To store the generated download link
   const [error, setError] = useState(''); // To store any error messages
 
+  // Extract YouTube video ID from URL
+  const getVideoId = (url) => {
+    const regex = /(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+  };
+
   // Handle video download logic 🎥⬇️
   const handleDownload = async (event) => {
     event.preventDefault(); // Prevent default form submission behavior
@@ -20,37 +26,40 @@ const Downloader = () => {
     setError(''); // Clear any existing errors
     setDownloadLink(null); // Reset download link
 
-    // Prepare request parameters 🔧
-    const encodedParams = new URLSearchParams();
-    encodedParams.append('url', videoUrl); // Add YouTube URL to the request payload
+    // Extract video ID from URL
+    const videoId = getVideoId(videoUrl);
+    if (!videoId) {
+      setLoading(false);
+      setError('Invalid YouTube URL. Please enter a valid link.');
+      return;
+    }
 
-    // Axios request options 🌐
+    // API endpoint and options
+    const url = `https://youtube-mp36.p.rapidapi.com/dl?id=${videoId}`;
     const options = {
-      method: 'POST',
-      url: 'https://youtube-media-downloader.p.rapidapi.com/v2/misc/list-items',
+      method: 'GET',
       headers: {
-        'x-rapidapi-key': '72177855a5msh5b849bc007b496dp1585b1jsn266ced173bac', // API Key for authentication 🔑
-        'x-rapidapi-host': 'youtube-media-downloader.p.rapidapi.com', // API Host
-        'Content-Type': 'application/x-www-form-urlencoded' // Content-Type header
+        'x-rapidapi-key': 'f2e84ce640mshee213fbcd3f5703p13d1b2jsn106a8cc627be', // API Key for authentication 🔑
+        'x-rapidapi-host': 'youtube-mp36.p.rapidapi.com', // API Host
       },
-      data: encodedParams, // Payload for the request
     };
 
     try {
       // Make API request and process response 🌐
-      const response = await axios.request(options);
+      const response = await fetch(url, options);
+      const result = await response.json();
       setLoading(false); // Hide loading spinner
 
       // Check if API call was successful ✅
-      if (response.data && response.data.status === 'success') {
-        setDownloadLink(response.data.data.url); // Set the download link provided by the API
+      if (result && result.status === 'ok') {
+        setDownloadLink(result.link); // Set the download link provided by the API
       } else {
-        setError('Invalid link or link is broken.'); // Set error message for invalid links
+        setError('Failed to generate download link. Please try again later.');
       }
     } catch (error) {
       // Handle errors during API call ❌
       setLoading(false); // Hide loading spinner
-      setError('Invalid link or link is broken.'); // Set error message
+      setError('An error occurred. Please try again later.'); // Set error message
       console.error(error); // Log error for debugging
     }
   };
@@ -65,7 +74,7 @@ const Downloader = () => {
     <section className="downloader">
       {/* Form for video URL submission */}
       <form onSubmit={handleDownload}>
-        <h2>Free Download YouTube Video</h2>
+        <h2>Convert Youtube videos into MP3 for free!</h2>
 
         {/* Input field for YouTube URL */}
         <div className="input-box">
@@ -83,12 +92,11 @@ const Downloader = () => {
         {/* Button container for horizontal alignment */}
         <div className="button-container">
           {/* Submit button */}
-          <button type="submit">Download</button>
+          <button type="submit">Convert</button>
 
           {/* Go back button */}
           <button type="button" onClick={handleGoBack}>
-            &#8592; <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-            <i class="fas fa-home"></i>
+            &#8592; Home
           </button>
         </div>
       </form>
@@ -104,7 +112,7 @@ const Downloader = () => {
       {downloadLink && (
         <div className="download-link">
           <a href={downloadLink} download>
-            Click here to download the video
+            Click here to download the MP3🎶
           </a>
         </div>
       )}
