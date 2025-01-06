@@ -10,7 +10,7 @@ const Footer = () => {
 
       {/* GitHub Profile Link */}
       <a
-        href="https://github.com/AkshatDev2002/Youtube_Video_Downloader"
+        href="https://github.com/AkshatDev2002/youFetch"
         target="_blank"
         rel="noopener noreferrer"
         style={styles.githubLink}

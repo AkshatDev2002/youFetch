@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+![youFetch Logo](./src/assets/spinner.png)
 
+# youFetch - A React App for Downloading YouTube Videos
+
+youFetch is a user-friendly React application that allows users to download YouTube videos easily. Simply paste the YouTube video link, and youFetch does the rest. Designed with simplicity and performance in mind, this app is perfect for anyone who wants to save their favorite YouTube videos offline.
+
+---
+
+## Features
+- **Easy-to-Use Interface:** A clean and intuitive UI for seamless interaction.
+- **Multiple Formats & Resolutions:** Supports video downloads in various formats and resolutions (based on availability).
+- **Fast Processing:** Efficient and quick video processing for hassle-free downloads.
+- **Secure Downloads:** Ensures user privacy and secure data handling.
+
+---
+
+## Getting Started
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Prerequisites
+- Node.js and npm installed on your machine.
+- A YouTube video link for testing.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/youfetch.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd youfetch
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+---
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page reloads when you make changes, and lint errors are displayed in the console.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode. See more about [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production in the `build` folder. The app is optimized for the best performance and ready for deployment. See [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more details.
 
 ### `npm run eject`
+This command copies configuration files and transitive dependencies into the project folder for full customization. Use with caution as it is a one-way operation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
 ## Learn More
+- [React Documentation](https://reactjs.org/)
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributions
+Contributions, issues, and feature requests are welcome! Feel free to open a pull request or issue to improve youFetch.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Acknowledgements
+- Logo design inspiration from 3D elements.
+- Built using [React](https://reactjs.org/) and [Create React App](https://github.com/facebook/create-react-app).
