@@ -1,0 +1,191 @@
+.downloader {
+    /* Layout and Padding 📏 */
+    max-width: 600px;
+    margin: 20px auto; /* Ensure margin between sections */
+    padding: var(--padding-medium);
+
+    /* Colors and Visuals 🎨 */
+    background-color: #56aced94;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.478);
+    text-align: center;
+}
+
+/* Heading Styles 📝 */
+.downloader h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff0000;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+}
+
+/* Input Box Styles ✏️ */
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label Styles 🏷️ */
+.input-box label {
+    /* Font and Spacing 📐 */
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+}
+
+/* Input Field Styles 🖊️ */
+.field {
+    /* Sizing and Padding 📏 */
+    width: 100%;  /* Ensure it fits within the parent container */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+    /* Font and Colors 🎨 */
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+    box-sizing: border-box;  /* Include padding in the width calculation */
+}
+
+/* Button Container for Horizontal Alignment */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Spread buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+/* Button Styling 🔘 */
+button {
+    text-align: center;
+    display: inline-block;
+
+    /* Font and Padding 🖋️ */
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+    padding: var(--padding-small) var(--padding-small);
+
+    /* Colors and Transitions 🌈 */
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect 🖱️ */
+button:hover {
+    background-color: #c35656;
+}
+
+/* Go Back Button Styles ⬅️ */
+.go-back-button {
+    text-align: center;
+    display: inline-block;
+
+    /* Font and Padding 🖋️ */
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+    padding: var(--padding-small) var(--padding-small);
+
+    /* Colors and Transitions 🌈 */
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Button Hover Effect 🖱️ */
+.go-back-button:hover {
+    background-color: #c35656;
+}
+
+/* Spinner Container Styles 🔄 */
+.spinner-container {
+    margin-top: 20px;
+}
+
+/* Download Link Styles ⬇️ */
+.download-link a {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4BB543;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Download Link Hover Effect 🖱️ */
+.download-link a:hover {
+    background-color: #45a049;
+}
+
+/* Error Message Styling ⚠️ */
+.error-message {
+    color: #ff0000;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Spinner Animation 🔄 */
+.spinner {
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Adjustments 📱 */
+@media (max-width: 600px) {
+    /* Downloader Section Adjustments 📏 */
+    .downloader {
+        padding: 15px; /* Slightly reduce padding */
+        width: 90%; /* Make it more compact on smaller screens */
+    }
+
+    /* Heading Font Size Adjustments 📝 */
+    .downloader h2 {
+        font-size: 1.2rem; /* Slightly smaller text */
+    }
+
+    /* Input Field Full Width 📐 */
+    .field {
+        width: 100%; /* Ensure input fields fill the container */
+    }
+
+    /* Button Size Adjustments 🔘 */
+    button {
+        font-size: 14px; /* Slightly bigger font for readability */
+        padding: 10px 15px; /* Adjust padding */
+    }
+
+    /* Button Container Adjustments for Smaller Screens */
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+}
+
+/* That's a wrap! 🎬 - Coded with 💻 and humor 😎 */

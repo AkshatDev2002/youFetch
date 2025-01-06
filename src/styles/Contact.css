@@ -1,0 +1,188 @@
+
+.contact {
+    /* Position and Alignment 📌 */
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: var(--padding-medium);
+    background-color: #56aced94;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.478);
+    z-index: 1;
+    width: 90%;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+    box-sizing: border-box;
+  }
+  
+  /* Heading Styles 🏷️ */
+  .contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff0000;
+    text-align: center;
+  }
+  
+  /* Input Box Styles 📥 */
+  .input-box {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Label Styles 🏷️ */
+  .input-box label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input and Textarea Styles ✍️ */
+  .feild, textarea {
+    width: 100%;
+    padding: var(--padding-small);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    min-height: 100px; /* Set minimum height for textarea 📄 */
+  }
+  
+  /* Button Styling 🖱️ */
+  button {
+    display: inline-block;
+    padding: var(--padding-small);
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c35656; /* Darker shade on hover 🔄 */
+  }
+  
+  /* Button Container Styling */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Go Back Button Styling 🔙 */
+  .go-back-button {
+    font-size: 1.5rem;
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .go-back-button:hover {
+    color: #c35656; /* Darker red on hover 🔄 */
+  }
+  
+  /* Send Message Button Styling */
+  .button-container button {
+    background-color: #FF6565;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: var(--padding-small);
+  }
+  
+  .button-container button:hover {
+    background-color: #c35656; /* Darker shade on hover 🔄 */
+  }
+  
+  /* Toast Notification Styles 🍞 */
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4BB543;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: toastAnimation 5s forwards;
+  }
+  
+  /* Toast Animation 🎬 */
+  @keyframes toastAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(10px);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(10px);
+    }
+  }
+  
+  /* Responsive Adjustments for Tablet Screens 📱 */
+  @media screen and (max-width: 768px) {
+    .contact {
+      width: 95%;
+      padding: var(--padding-small);
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .toast {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Responsive Adjustments for Mobile Screens 📲 */
+  @media screen and (max-width: 480px) {
+    .contact {
+      margin-top: 10px;
+      padding: var(--padding-small);
+    }
+  
+    .contact h2 {
+      font-size: 1.2rem;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .toast {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }
+  

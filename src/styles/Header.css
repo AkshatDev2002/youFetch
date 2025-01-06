@@ -1,0 +1,149 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Gradient Background 🌈 */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    position: static;
+    border-style: hidden;
+}
+
+/* Neon Text Animation 🌟 */
+.text {
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0; 
+    border-radius: 2px;
+    letter-spacing: 2px;
+    display: flex;
+}
+
+/* Letter Styles 🔠 */
+.letter {
+    color: #ffffff;
+    display: inline-block;
+}
+
+/* Fancy Letter Animation ✨ */
+.letter-f {
+    transform: translate(0.2rem, 1rem) rotate(10deg);
+    font-size: 2.5rem;
+    animation: flicker 1.5s ease-in-out infinite alternate, glow 1.5s ease-in-out infinite alternate; 
+    
+    /* Neon Glow Colors 💡 */
+    color: #FF0000;
+    text-shadow: 
+        0 0 5px #FF0000,
+        0 0 10px #FF0000,
+        0 0 15px #FF0000,
+        0 0 20px #FF3333,
+        0 0 25px #FF3333, 
+        0 0 30px #FF3333, 
+        0 0 35px #FF3333; 
+}
+
+/* Flicker Animation 💥 */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        text-shadow: 
+            0 0 5px #FF0000,
+            0 0 10px #FF0000,
+            0 0 15px #FF0000,
+            0 0 20px #FF3333,
+            0 0 25px #FF3333,
+            0 0 30px #FF3333,
+            0 0 35px #FF3333;
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: 
+            0 0 3px #FF0000,
+            0 0 7px #FF0000,
+            0 0 12px #FF0000,
+            0 0 17px #FF3333,
+            0 0 22px #FF3333,
+            0 0 27px #FF3333,
+            0 0 32px #FF3333;
+    }
+    100% {
+        opacity: 2;
+        text-shadow: 
+            0 0 5px #FF0000,
+            0 0 10px #FF0000,
+            0 0 15px #FF0000,
+            0 0 20px #FF3333,
+            0 0 25px #FF3333,
+            0 0 30px #FF3333,
+            0 0 35px #FF3333;
+    }
+}
+
+/* Glow Animation ✨ */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 15px #FF0000, 0 0 20px #FF3333;
+    }
+    100% {
+        text-shadow: 0 0 10px #FF3333, 0 0 15px #FF3333, 0 0 20px #FF3333, 0 0 25px #FF3333;
+    }
+}
+
+/* Logo Styles 🌟 */
+.logo {
+    position: absolute; /* Positions the logo relative to the header */
+    top: -10px;         /* Distance from the top edge */
+    right: 10px;        /* Distance from the right edge */
+    width: 100px;       /* Adjust size as needed */
+    height: auto;
+    margin: 0;
+    cursor: pointer;    /* Show pointer cursor to indicate clickable */
+    animation: blink 1s infinite alternate, shake 0.5s ease-in-out 3s infinite; /* Blink and Shake animations */
+}
+
+/* Hover Shake Effect 🔄 */
+.logo:hover {
+    animation: shake 0.5s ease-in-out; /* Shake when hovered */
+}
+
+/* Shake Effect on Click 🔄 */
+.logo:active {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Blink Animation ✨ */
+@keyframes blink {
+    0% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0.3; /* Slightly transparent */
+    }
+    100% {
+        opacity: 1; /* Fully visible again */
+    }
+}
+
+/* Shake Animation 🔄 */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px); /* Moves left */
+    }
+    50% {
+        transform: translateX(5px);  /* Moves right */
+    }
+    75% {
+        transform: translateX(-5px); /* Moves left */
+    }
+    100% {
+        transform: translateX(0);    /* Returns to original position */
+    }
+}
+
+/* That's a wrap for the header! 🎬 - Coded with 💻 and humor 😎 */

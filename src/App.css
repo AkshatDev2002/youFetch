@@ -1,0 +1,153 @@
+:root {
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --margin-small: 10px;
+  --margin-medium: 20px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+  font-weight: 900;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.about-yt {
+  /* The main container for the Home section 🌟 */
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: auto;
+  padding: var(--padding-medium);
+  background-color: #56aced94;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.478);
+  z-index: 1;
+  width: 90%;
+  font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+  font-weight: 900;
+}
+
+.about-yt h2 {
+  /* Main heading in the About UFP section 🎤 */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+  color: #ff0000;
+}
+
+.about-yt h3 {
+  /* Secondary heading in the About UFP section 🎶 */
+  font-size: 1.2rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #ff0000;
+  text-align: center;
+}
+
+.about-yt h4 {
+  /* Tertiary heading in the About UFP section 📋 */
+  font-size: 1.1rem;
+  margin-top: 1px;
+  text-align: center;
+  color: #fa0000;
+}
+
+.about-yt p, .about-yt li {
+  /* Shared styling for text and list items in the About UFP section 📝 */
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-yt ul {
+  /* Styling for unordered lists in the About UFP section 🔘 */
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.get-started-button {
+  /* Button styling for the "Get Started" call-to-action 🖱️ */
+  text-align: center;
+  display: inline-block;
+  font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+  font-weight: 900;
+  padding: var(--padding-small) var(--padding-small);
+  background-color: #FF6565;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  /* Hover effect for the "Get Started" button ✨ */
+  background-color: #c35656;
+}
+
+/* Mobile-first adjustments 📱 */
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .about-yt {
+    /* Adjustments for the About UFP container on mobile devices 📱 */
+    padding: 10px;
+    width: 95%;
+    margin-bottom: 80px;
+  }
+
+  .get-started-button {
+    /* Adjustments for the "Get Started" button on mobile devices 👍 */
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+/* Tablet devices (min-width: 600px) */
+@media (min-width: 600px) {
+  .about-yt {
+    /* Adjustments for the About UFP container on tablets 💻 */
+    width: 90%;
+  }
+
+  .get-started-button {
+    /* Adjustments for the "Get Started" button on tablets ✋ */
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+}
+
+/* Larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .about-yt {
+    /* Adjustments for the About UFP container on larger screens 🖥️ */
+    width: 80%;
+  }
+
+  .get-started-button {
+    /* Adjustments for the "Get Started" button on larger screens 🖱️ */
+    font-size: 12px;
+    padding: 12px 30px;
+  }
+}
+
+/* Extra large screens (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .about-yt {
+    /* Adjustments for the About UFP container on extra-large screens 🖼️ */
+    width: 70%;
+  }
+
+  .get-started-button {
+    /* Adjustments for the "Get Started" button on extra-large screens 🎯 */
+    font-size: 12px;
+    padding: 14px 35px;
+  }
+}

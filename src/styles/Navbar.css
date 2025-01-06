@@ -1,0 +1,83 @@
+.vertical-navbar {
+    /* Fixed position vertical navbar for quick navigation 📌 */
+    position: fixed;
+    padding: var(--padding-small); /* Using a CSS variable for padding 📏 */
+    top: 78px; /* Navbar offset from the top 🔝 */
+    right: 0; /* Positioned to the right of the screen 🖱️ */
+    width: 200px; /* Set width for the navbar 📐 */
+    background-color: #56aced; /* Eye-catching background color 🎨 */
+    justify-content: center; /* Center-align the content 🤹 */
+    color: white; /* Text color for readability 🌟 */
+    padding: 10px; /* Additional padding for inner spacing 🛋️ */
+    border-radius: 10px; /* Smooth edges for a modern look ✨ */
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.619); /* Subtle shadow effect for depth 🖼️ */
+    z-index: 1000; /* Ensure the navbar appears above other elements 🚀 */
+    animation: slideIn 0.3s ease-in-out; /* Entry animation for a dynamic feel 🎥 */
+  }
+  
+  .vertical-navbar ul {
+    /* Unordered list styling for navigation items 📝 */
+    list-style: none; /* Removing default list styles ❌ */
+    padding: 0; /* No padding for clean alignment ✂️ */
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive; /* Playful font for personality 😄 */
+    font-weight: 900; /* Bold text for emphasis 💪 */
+  }
+  
+  .vertical-navbar li {
+    /* List item styling for each navigation link 🔗 */
+    padding: 10px; /* Inner spacing for better clickability 🖱️ */
+    cursor: pointer; /* Pointer cursor for interactivity 👉 */
+    transition: background-color 0.3s; /* Smooth hover effect animation 🎭 */
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive; /* Matching font style 🎨 */
+    font-weight: 900; /* Bold text for strong emphasis 💥 */
+  }
+  
+  .vertical-navbar li:hover {
+    /* Hover state for navigation items 🖱️ */
+    background-color: #c35656; /* Highlighted background for hover effect 🌟 */
+    border-radius: 10px; /* Retaining smooth edges on hover ✨ */
+  }
+  
+  /* Animation Section 🎬 */
+  @keyframes slideIn {
+    /* Keyframe animation for the sliding navbar entry 🏃‍♂️ */
+    from {
+      transform: translateX(100%); /* Starting position off-screen ➡️ */
+    }
+    to {
+      transform: translateX(0); /* Final position in view 👀 */
+    }
+  }
+  
+  /* Responsive Adjustments for Mobile and Smaller Screens 📱 */
+  @media screen and (max-width: 768px) {
+    .vertical-navbar {
+      width: 100%; /* Make the navbar take full width on smaller screens 📐 */
+      height: auto; /* Allow the navbar height to adjust automatically 🧭 */
+      top: 0; /* Remove offset from the top for mobile view 🔝 */
+      left: 0; /* Position the navbar at the left for mobile screens 📍 */
+      border-radius: 0; /* Remove rounded corners for a more compact look ✂️ */
+      box-shadow: none; /* Remove shadow for a cleaner mobile look 🌟 */
+    }
+  
+    .vertical-navbar ul {
+      display: flex; /* Change to a row layout for mobile 🛋️ */
+      justify-content: space-around; /* Distribute items evenly 📏 */
+    }
+  
+    .vertical-navbar li {
+      padding: 15px; /* Slightly more padding for easier clicking on mobile ✋ */
+      font-size: 1rem; /* Adjust font size for mobile readability 🔠 */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .vertical-navbar {
+      padding: 5px; /* Reduce padding for smaller screens 📏 */
+    }
+  
+    .vertical-navbar li {
+      font-size: 0.9rem; /* Adjust font size further for small screens 🔠 */
+      padding: 8px; /* Decrease padding to fit on smaller screens 🧳 */
+    }
+  }
