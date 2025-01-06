@@ -1,10 +1,24 @@
-![youFetch Logo](./spinner.png)
 
 # youFetch - A React App for Downloading YouTube Videos
 
 youFetch is a user-friendly React application that allows users to download YouTube videos easily. Simply paste the YouTube video link, and youFetch does the rest. Designed with simplicity and performance in mind, this app is perfect for anyone who wants to save their favorite YouTube videos offline.
 
 ---
+
+
+## 🖼 Preview
+![Project Preview](https://i.postimg.cc/8C89q8Ty/385aefca-8477-4dac-b700-9818e39c1df7.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, React Router
+- **Styling:** CSS
+- **Animations:** CSS keyframes and animations.
+
+---
+
 
 ## Features
 - **Easy-to-Use Interface:** A clean and intuitive UI for seamless interaction.
@@ -14,7 +28,7 @@ youFetch is a user-friendly React application that allows users to download YouT
 
 ---
 
-## Getting Started
+## 🖥️ Setup Instructions
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Prerequisites
@@ -51,22 +65,31 @@ Builds the app for production in the `build` folder. The app is optimized for th
 ### `npm run eject`
 This command copies configuration files and transitive dependencies into the project folder for full customization. Use with caution as it is a one-way operation.
 
----
 
-## Learn More
-- [React Documentation](https://reactjs.org/)
-- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
-
-## Contributions
-Contributions, issues, and feature requests are welcome! Feel free to open a pull request or issue to improve youFetch.
 
 ---
 
-### License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-### Acknowledgements
-- Logo design inspiration from 3D elements.
-- Built using [React](https://reactjs.org/) and [Create React App](https://github.com/facebook/create-react-app).
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a Pull Request.
+
+---
+
+## 📧 Contact
+
+**Author:** Akshat Dev  
+**Email:** dakshat75@gmail.com  
+**GitHub:** [AkshatDev](https://github.com/AkshatDev2002)
+
