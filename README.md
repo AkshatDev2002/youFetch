@@ -80,10 +80,10 @@ YouFetch uses the `youtube-mp36` API from RapidAPI to process video-to-MP3 conve
 
 ## Screenshots
 ### Desktop View
-![Desktop View](./screenshots/desktop-view.png)
+![Desktop View](https://i.postimg.cc/KYp0FTZg/Screenshot-276.png)
 
 ### Mobile View
-![Mobile View](./screenshots/mobile-view.png)
+![Mobile View](https://i.postimg.cc/HLMtGhPF/Whats-App-Image-2025-01-06-at-20-42-48-8e757b3d.jpg)
 
 ---
 
@@ -114,8 +114,7 @@ Contributions are welcome! To contribute:
 
 ## Contact
 Feel free to reach out for support or feedback:
-- **Email**: your-email@example.com
-- **GitHub**: [Your GitHub Profile](https://github.com/<your-username>)
+- **Email**: dakshat75@gmail.com.com
 
 ---
 
