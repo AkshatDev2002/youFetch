@@ -48,7 +48,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<AboutSection />} />
-          <Route path="*" element={<div>404 - Page Not Found</div>} />
+          <Route path="*" element={<AboutSection />} />
           <Route path="/download" element={<Downloader />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
