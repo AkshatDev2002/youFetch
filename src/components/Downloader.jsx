@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Spinner from './Spinner'; // Spinner component for loading animation
 import { useNavigate } from 'react-router-dom'; // For navigation 🚀
-import '../styles/Converter.css'; // Importing styles for the Downloader component
+import '../styles/Downloader.css'; // Importing styles for the Downloader component
 
 const Downloader = () => {
   const navigate = useNavigate(); // Hook for programmatic navigation 🔄

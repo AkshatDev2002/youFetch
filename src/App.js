@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
-import Downloader from "./components/Converter";
+import Downloader from "./components/Downloader";
 import Contact from "./components/Contact";
 import "./App.css";
 
