@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
-import VideoDownloader from "./components/Converter";
+import Downloader from "./components/Converter";
 import Contact from "./components/Contact";
 import "./App.css";
 
@@ -49,7 +49,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<AboutSection />} />
           <Route path="*" element={<AboutSection />} />
-          <Route path="/download" element={<VideoDownloader />} />
+          <Route path="/download" element={<Downloader />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
